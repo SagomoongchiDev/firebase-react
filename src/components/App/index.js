@@ -1,9 +1,15 @@
 import React from "react";
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import * as ROUTES from '../../constants/routes';
+import SignUp from "../SignUp/signUp";
 
 const App =()=>(
-    <div>
-        <h1>App</h1>
-    </div>
+    <Router>
+        <div>
+            app
+            <Route path={ROUTES.SIGN_UP} component={SignUp}/>
+        </div>
+    </Router>
 );
 
 export default App;
